@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vakiopaine — Korttelibaari & kulttuurin kohtaamispaikka</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link for a11y -->
+  <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+
+  <header class="site-header" role="banner" aria-label="Pysyvä ylävalikko">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Vakiopaine – etusivu" tabindex="0" aria-disabled="true">
+        <!-- Minimal inline SVG wordmark (decorative) -->
+        <svg class="logo" viewBox="0 0 320 64" aria-hidden="true" focusable="false">
+          <text x="0" y="46" font-family="Georgia, serif" font-size="48" letter-spacing="1"
+                fill="currentColor">Vakiopaine</text>
+        </svg>
+      </a>
+      <nav class="main-nav" aria-label="Päävalikko">
+        <ul>
+          <li><a href="#koti" tabindex="0" aria-disabled="true">Koti</a></li>
+          <li><a href="#menu" tabindex="0" aria-disabled="true">Menu</a></li>
+          <li><a href="#tapahtumat" tabindex="0" aria-disabled="true">Tapahtumat</a></li>
+          <li><a href="#galleria" tabindex="0" aria-disabled="true">Galleria</a></li>
+          <li><a href="#loyda" tabindex="0" aria-disabled="true">Löydä meidät</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="sisalto">
+    <!-- HERO -->
+    <section id="koti" class="hero" aria-label="Etusivu">
+      <div class="hero-media" role="img"
+           aria-label="Tunnelmallinen baaritiski puupinnoilla ja hämärällä valolla">
+        <!-- Background image via CSS + local placeholder path on the pseudo element -->
+      </div>
+      <div class="hero-overlay container">
+        <h1 class="hero-title">Vakiopaine</h1>
+        <p class="hero-sub">Korttelibaari &amp; kulttuurin kohtaamispaikka</p>
+        <div class="badge" aria-hidden="true">Perustettu 1992</div>
+      </div>
+      <div class="hero-noise" aria-hidden="true"></div>
+    </section>
+
+    <!-- MEISTÄ -->
+    <section class="about section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="about-title">Tarina</h2>
+          <p class="section-kicker">Meistä</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-copy">
+            <h3 class="visually-hidden">Lyhyt esittely</h3>
+            <p class="lead">
+              Vakiopaine on paikka, jossa tutut kasvot, hyvä musiikki ja huolella kaadetut juomat kohtaavat.
+              Intiimi nurkka keskustelulle, keikoille ja myöhäisillan tarinoille.
+            </p>
+
+            <ul class="pills" aria-label="Kohokohdat">
+              <li class="pill">Pienpanimo-oluet</li>
+              <li class="pill">Luomu- &amp; natural-viinit</li>
+              <li class="pill">Vinyyli-illat</li>
+              <li class="pill">Paikallista taidetta</li>
+            </ul>
+          </article>
+
+          <figure class="about-figure">
+            <img src="assets/portrait.jpg" alt="Pystykuva: lämmin puupinta ja vintage-juliste seinällä" />
+	    <figcaption class="visually-hidden">Tunnelmallinen pystykuva baarin sisätiloista</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu section" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="menu-title">Menu-esittely</h2>
+          <p class="section-kicker">Makuja lasissa &amp; lautasella</p>
+        </header>
+
+        <div class="card-grid">
+          <!-- Juomat -->
+          <article class="card">
+            <header class="card-head">
+              <h3>Juomat</h3>
+            </header>
+            <ul class="menu-list">
+              <li>
+                <h4>Talon Negroni</h4>
+                <p>klassikko, appelsiininkuori</p>
+              </li>
+              <li>
+                <h4>Sumuinen Pils</h4>
+                <p>paikallinen hana</p>
+              </li>
+              <li>
+                <h4>Kylmä Kahvi Tonic</h4>
+                <p>baristan sekoitus, sitruksen häivähdys</p>
+              </li>
+              <li>
+                <h4>Inkivääri Spritz</h4>
+                <p>raikas, kevyt potku</p>
+              </li>
+              <li>
+                <h4>Kauden Mocktail</h4>
+                <p>alkoholiton, yrttejä &amp; sitrusta</p>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Viinit -->
+          <article class="card">
+            <header class="card-head">
+              <h3>Viinit</h3>
+            </header>
+            <ul class="menu-list">
+              <li>
+                <h4>Luomu Riesling</h4>
+                <p>kivinen raikkaus, kuivahko</p>
+              </li>
+              <li>
+                <h4>Pinot Noir</h4>
+                <p>marjainen, samettinen tanniini</p>
+              </li>
+              <li>
+                <h4>Oranssi Viini</h4>
+                <p>natural-tyyli, teesitrus</p>
+              </li>
+              <li>
+                <h4>Pet-Nat</h4>
+                <p>pirskahteleva, villihiiva</p>
+              </li>
+              <li>
+                <h4>Talontalon Kaato</h4>
+                <p>vaihtuva valinta sommelierilta</p>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Purtavat -->
+          <article class="card">
+            <header class="card-head">
+              <h3>Purtavat</h3>
+            </header>
+            <ul class="menu-list">
+              <li>
+                <h4>Marinoidut oliivit</h4>
+                <p>sitrusta &amp; yrttejä</p>
+              </li>
+              <li>
+                <h4>Juustolautanen</h4>
+                <p>pieni valikoima, hillo &amp; paahde</p>
+              </li>
+              <li>
+                <h4>Focaccia</h4>
+                <p>oliiviöljy, rosmariini, suola</p>
+              </li>
+              <li>
+                <h4>Paahdetut mantelit</h4>
+                <p>savusuola, lämmin</p>
+              </li>
+              <li>
+                <h4>Pikkelöity kausi-omena</h4>
+                <p>makean kirpeä lisuke</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="note">Koko menu saatavilla pyydettäessä.</p>
+      </div>
+    </section>
+
+    <!-- TAPAHTUMAT -->
+    <section id="tapahtumat" class="events section" aria-labelledby="events-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="events-title">Tapahtumat</h2>
+          <p class="section-kicker">Indie-henkeä joka viikko</p>
+        </header>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="date-badge" aria-label="Päivämäärä">12<br><span>loka</span></div>
+            <div class="event-body">
+              <h3>Open Mic -ilta</h3>
+              <p>Lavalle nousee runoilijoita ja lauluntekijöitä — lämmin, avoin tunnelma.</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="date-badge" aria-label="Päivämäärä">18<br><span>loka</span></div>
+            <div class="event-body">
+              <h3>DJ Vinyl Set</h3>
+              <p>Illanvalot, rätinä ja valikoitu vinyylisoundi 70–90-lukujen aarrekartalta.</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="date-badge" aria-label="Päivämäärä">26<br><span>loka</span></div>
+            <div class="event-body">
+              <h3>Runoilta</h3>
+              <p>Paikalliset äänet, ilmaisua ja ajatuksia — intiimi kuuntelukokemus.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERIA -->
+    <section id="galleria" class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="gallery-title">Galleria</h2>
+          <p class="section-kicker">Hetkiä ja yksityiskohtia</p>
+        </header>
+
+        <div class="masonry">
+          <figure class="tile tall">
+            <img src="assets/gallery-1.jpg" alt="Puinen baaritiski lämpimässä valossa" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-2.jpg" alt="Vakiopaineen kyltti yön pimeässä" />
+          </figure>
+          <figure class="tile wide">
+            <img src="assets/gallery-3.jpg" alt="" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-4.jpg" alt="" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-5.jpg" alt="" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-6.jpg" alt="" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-7.jpg" alt="" />
+          </figure>
+          <figure class="tile">
+            <img src="assets/gallery-8.jpg" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÖYDÄ MEIDÄT -->
+    <section id="loyda" class="find-us section" aria-labelledby="find-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="find-title">Löydä meidät</h2>
+          <p class="section-kicker">Osoite &amp; aukiolo</p>
+        </header>
+
+        <div class="find-grid">
+          <div class="details">
+            <address class="address">
+              <strong>Vakiopaine</strong><br />
+              Kauppakatu 6, 40100 Jyväskylä<br />
+              <span>+358 50 472 7601</span><br />
+              <span>vakkaribaari@gmail.com</span>
+            </address>
+
+            <div class="hours" aria-label="Aukioloajat">
+              <h3>Aukiolo</h3>
+              <ul>
+                <li><span>Ma–La</span><span>16.00–2.00</span></li>
+                <li><span>Su</span><span>18.00-2.00</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <figure class="mapbox" aria-label="Karttapaikkamerkki">
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.2773903297234!2d25.7398059!3d62.238861099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468574183bd837c3%3A0xdd007c484234b365!2sVakiopaine!5e1!3m2!1sfi!2sfi!4v1758558132612!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Vakiopaine</span>
+      </div>
+
+      <div class="social" aria-label="Sosiaaliset linkit (ei-aktiiviset)">
+        <!-- Decorative inline SVGs; inert for mockup -->
+        <a class="social-icon" href="#" tabindex="0" aria-disabled="true" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+        </a>
+        <a class="social-icon" href="#" tabindex="0" aria-disabled="true" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 22V12h3l1-4h-4V6.5C13 5.7 13.3 5 14.6 5H17V1.3C16.6 1.2 15.3 1 13.8 1 10.9 1 9 2.7 9 5.9V8H6v4h3v10h4z"/></svg>
+        </a>
+        <a class="social-icon" href="#" tabindex="0" aria-disabled="true" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8a10.2 10.2 0 1 0 0 20.4A10.2 10.2 0 0 0 12 1.8zm4.6 14.8a.9.9 0 0 1-1.2.3c-3.3-2-7.6-2.1-12.1-.5a.9.9 0 1 1-.6-1.7c4.9-1.8 9.8-1.6 13.5.6.5.3.6.9.4 1.3zm1.7-3.2a1 1 0 0 1-1.3.4c-3.8-2.3-9.6-3-14.1-1.6a1 1 0 1 1-.6-1.9c5.2-1.6 11.7-.8 15.9 1.8.5.3.6.9.3 1.3zm.1-3.3c-4.3-2.6-11.4-2.9-15.6-1.6a1.1 1.1 0 0 1-.6-2c4.9-1.5 12.7-1.1 17.6 1.8a1.1 1.1 0 0 1-1.4 1.8z"/></svg>
+        </a>
+      </div>
+
+      <small class="copyright">© <span aria-hidden="true">1992–</span><span>2025</span> Vakiopaine. Kaikki oikeudet pidätetään.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
